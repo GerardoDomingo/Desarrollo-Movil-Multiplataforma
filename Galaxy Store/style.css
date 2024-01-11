@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+#tarjeta {
+    background-color: hsl(0, 0%, 7%);
+    color: #fff;
+    margin: 10px auto;
+    width: 34%;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#NameApp {
+    float: left;
+    width: 50%;
+}
+
+#NameApp h1 {
+    margin: 0;
+}
+
+#NameApp img {
+    margin-right: 10px;
+}
+
+#actualizacion {
+    text-align: left;
+}
+
+#name2 {
+    text-align: left;
+}
+
+#juegos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.juego-img {
+    width: 400px;
+    height: 200px;
+    display: inline-block;
+}
+
+#idop1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+#idop1 h3:hover {
+    background-color: #473f3f81;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#CardJuegos {
+    display: flex;
+    flex-direction: row; /* Organiza en filas horizontales */
+    justify-content: space-between; /* Alinea los elementos de manera uniforme */
+    align-items: center; /* Permite que los elementos se envuelvan a la siguiente línea cuando no hay suficiente espacio */
+}
+
+.juego-card {
+    text-align: center;
+    width: 250px; /* Ancho deseado para cada elemento */
+     /* Márgenes entre los elementos */
+}
+
+.juego-card:last-child {
+    margin-right: 0; /* Elimina el margen derecho para el último elemento */
+}
+
+.juego-card img {
+    width: 100px; /* Ajusta el ancho de las imágenes según sea necesario */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+.juego-card h4,
+.juego-card p {
+    font-size: 12px; 
+    text-align: left;/* Puedes ajustar el tamaño según tus preferencias */
+}
+#buscar img {
+    width: 25px;
+    height: 25px; /* Mantiene la proporción de aspecto */
+    float: right;
+    background-color: white;
+}
+#desc{
+    width: 70px;
+    height: 25px;  
+}
+#FrostFlame {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.frost-flame-img {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#juegos2 {
+    width: 400px;
+    height: 200px;
+}
+
+.frost-flame-img img {
+    width: 100px;
+    height: 100px;
+    margin: 0 5px;
+}
+#tam {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-right: 30px;/* Mueve el elemento a la derecha en 5px */
+    margin-left: 30px; 
+}

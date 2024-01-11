@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Store</title>  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tarjeta">
+        <div id="NameApp">
+            <h1>Galaxy Store</h1>
+            
+        </div>
+        <div id="buscar"><img src="/buscar.png" alt=""></div>
+        <div id="juegos">
+            <!-- Cambié los id="img1" a class="juego-img" -->
+            <img class="juego-img" src="/imgJuego1.jpeg" alt="">
+            <img class="juego-img" src="/imgJuego4.jpeg" alt="">
+            <img class="juego-img" src="/imgJuegos5.jpeg" alt="">
+            <img class="juego-img" src="/imgJuegos6.jpg" alt="">
+            <img class="juego-img" src="/imgJuegos8.jpg" alt="">
+        </div>
+        <div id="idop1">
+            <h3>Destacado</h3>
+            <h3>Registro previo</h3>
+            <h3>Éxitos</h3>
+        </div>
+        <div id="actualizacion"><h3>Últimas actualizaciones de juegos</h3></div>
+         
+        <div id="CardJuegos">
+            <div class="juego-card">
+                <img src="/icono1.jpeg" alt="">
+                <h4>Free Fire</h4>
+                <p>COGNOSPHERE PTE. LTD.</p>
+                <p>Compras en la aplicación</p>
+                <img id="desc" src="/descargarr.jpg" alt="">
+            </div>
+            <div class="juego-card">
+                <img src="/icono3.jpeg" alt="">
+                <h4>Call of duty</h4>
+                <p>COGNOSPHERE PTE. LTD.</p>
+                <p>Compras en la aplicación</p>
+                <img id="desc" src="/descargarr.jpg" alt="">
+            </div>
+            <div class="juego-card">
+                <img  src="/icono4.jpeg" alt="">
+                <h4>Genshin Impact</h4>
+                <p>COGNOSPHERE PTE. LTD.</p>
+                <p>Compras en la aplicación</p>
+                <img  id="desc"src="/descargarr.jpg" alt="">
+            </div>
+        </div>
+        
+        <h3 id="name2">Frost & Flame: King of Avalon</h3>
+        
+        <div id="FrostFlame">
+            <img id="juegos2" src="/imgJuego4.jpeg" alt="">
+        </div id="icon">
+    
+        <div>
+     <center>
+        <img id="tam" src="/mando.webp" alt="">
+        <img id="tam" src="/ap.png" alt="">
+        <img id="tam" src="/menu.png" alt="">
+    </center>
+        </div>
+    </div>
+
+    <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const juegoImgs = document.querySelectorAll('.juego-img');
+            let currentIndex = 0;
+
+            function mostrarSiguienteImagen() {
+                // Ocultar la imagen actual
+                juegoImgs.forEach(img => {
+                    img.style.display = 'none';
+                });
+
+                // Mostrar la siguiente imagen
+                juegoImgs[currentIndex].style.display = 'block';
+
+                // Elegir la siguiente imagen
+                currentIndex = (currentIndex + 1) % juegoImgs.length;
+            }
+
+            // Mostrar imágenes cada 2 segundos
+            setInterval(mostrarSiguienteImagen, 2000);
+        });
+
+    </script>
+
+</body>
+</html>
