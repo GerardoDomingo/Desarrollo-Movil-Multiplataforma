@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#calculadora {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    border: 2px solid #b2bec3;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+#pantalla {
+    font-size: 1.5em;
+    height: 60px;
+    text-align: right;
+    padding: 0 10px;
+    border-bottom: 2px solid #d8d3d3;
+    background-color: rgb(253, 253, 253);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    width: 100%;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 15px;
+    border: 1px solid #b2bec3;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button.operador {
+    background-color: #4CAF50; 
+}
+
+button.doble {
+    display: grid;
+    color: #ffffff;
+    gap: 1px;
+}
+
+button.borrar {
+    background-color: #110e0e;
+    color: #d8d8d8;
+    display: flex;
+    width: 75px;
+    margin-left: auto;
+}
+
+button.igual {
+    background-color: #4CAF50;
+}
+
+button.borrar-todo {
+    display: grid;
+    color: #e74c3c;
+    gap: 1px;
+    width: 100%;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="calculadora">
+        <div id="pantalla"></div>
+        <button class="borrar" onclick="borrarUnDigito()">⌫</button>
+        <div id="botones">
+            <button class="borrar-todo" onclick="borrarTodo()">C</button>
+            <button>()</button>
+            <button>%</button>
+            <button class="operador">/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class="operador">*</button>
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class="operador">-</button>
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="operador">+</button>
+            <button >+/-</button>
+            <button class="doble">0</button>
+            <button>.</button>
+            <button class="igual operador">=</button>
+
+            
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
